@@ -1,0 +1,267 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{% static 'home1.css' %}">
+      <style>
+              body{
+    font-family: "Poppins", sans-serif;
+    }
+    nav{
+    background:#5eb9e0!important;
+    box-shadow:1px 1px 2px #484b4d;
+    }
+    nav .navbar-brand{
+    color: var(--bs-orange);
+    }
+    .navbar-nav .nav-link{
+    font-size:20px;
+    padding-top:20px;
+    padding-bottom:20px
+    }
+    .navbar-toggler{
+    outline: none!important;
+    padding: none!important;
+    }
+    .carousel-inner .carousel-item{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    background-repeat:no repeat;
+    }
+    .carousel-inner .carousel-item:before::{
+    content:'';
+    background-color:rgba(12, 11, 10,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0
+    bottom:0;
+    }
+    .carousel.inner .carousel-caption{
+    display: flex;
+    justify-content:center;
+    position;absolute;
+    bottom:0;
+    top:35%
+    left:0;
+    right:0;
+    }
+    .carousel.inner .carousel-caption span{
+    color: var(--bs-orange);
+    }
+    }
+    .carousel.inner .carousel-caption h2{
+    color:#fff;
+    font-size:42px;
+    font-weight:600;
+    width:80%
+    margin:0px auto 20px auto;
+    }
+    .carousel.inner .carousel-caption p{
+    font-size:20px;
+    width:80;
+    margin:0px auto 20px auto;
+    }
+      </style>
+    <title>vins christian college</title>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">VINS CHRISTIAN COLLEGE OF ENGINEERING</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#"> COURSES </a>
+        </li>
+          <li class="nav-item mx-3">
+          <a class="nav-link" href="#"> FACULTY</a>
+        </li>
+          <li class="nav-item mx-3">
+          <a class="nav-link" href="#"> CONTACT US </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link active " aria-current="page" href="#">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/image1.jpg' %}" class="d-block w-100" alt="no image">
+      <div class="carousel-caption d-none d-md-block">
+        <h2><b>VINS CHRISTIAN COLLEGE OF ENGINEERING</b></h2>
+        <p>"Education is the most powerful weapon which you can use to change the world."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image2.jpg' %}" class="d-block w-100" alt="no image">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>India's no 1 college</h2>
+        <p>"The beautiful thing about learning is that no one can take it away from you."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image3.jpg' %}" class="d-block w-100" alt="no image">
+      <div class="carousel-caption d-none d-md-block">
+        <h2><b>VINS CHRISTIAN COLLEGE OF ENGINEERING</b></h2>
+        <p>"The roots of education are bitter, but the fruit is sweet." - Aristotle</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br>
+        <button type="submit" value="Submit"><a href="{% url 'courses' %}" >courses</a> </button>
+  <button type="submit" value="Submit"><a href="{% url 'faculty' %}" >faculty</a> </button>
+   <button type="submit" value="Submit"><a href="{% url 'contact' %}" >contact</a> </button>
+   <br>
+  <main id="about">
+    <div class="about mt-5">
+      <div class="container-fluid">
+        <h2 class="h2.responsive fw.bold text-center my-2"><i>ABOUT</i></h2>
+        <p class="text-center w-responsive mx-auto mb-1">Welcome to Vins Christian College of Engineering & Vins Christian Women's College of Engineering.
+          With VINS, be prepared to put yourself on the anvil for budding professionals. VINS believes in the power of imagination and innovation.
+          Those who dare to dream reach the star is VINS moving philosophy. Welcome to Vins Christian Group of Engineering Colleges.</p>
+      </div>
+      <br>
+      <br>
+      <div class="text-center fw.bold"><h3><i>OUR CHAIRMAN</i></h3>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-6 align-item-stretch">
+          <img src="{% static 'images/chairman.jpg' %}" class="d-block w-100" alt="no image">
+          </div>
+          <div class="col-md-6">
+            <h2 class="h2.responsive fw.bold text-start"><i>James Dimon</i></h2>
+            <br>
+            <P>A committed industrialist, has now dedicated himself to the cause of Technical Education.
+              His cherished goal is to bring up his brain child Vins Christian College of Engineering as
+              a Model Engineering Institution and one of the best Engineering colleges in New York to turn
+              out professionals endowed with rich practical knowledge and dedication.</P>
+            <p>Vins Christian College of Engineering has made an epoch in the field of Engineering Education, throwing its beacon radiance of enlightenment and guidance to multitudes of engineering aspirants far and wide.
+              The inception of the college in the year 2004 came as a relief and fulfillment of the long -felt desire of innumerable parents who were then longing to admit their children in a well- protected and disciplined Engineering College.
+              As a founder of Vins Group of Colleges, I feel immensely blessed for the rarest opportunity of serving the general public in the first half of my life as a politician and in the second half solely dedicating myself to the welfare
+              second half to the welfare and upliftment of the aspiring student community with a special concern for the poor and the downtrodden. My vision is to impart interdisciplinary knowledge and understanding among the students leading
+              to inventions and achievements and ultimately to place them as skilful Engineers in the globally competitive arena.</p>
+            <button type="button" class="btn btn-primary">read more..</button>
+      </div>
+    </div>
+      <br>
+      <main id="course">
+        <div class="container">
+           <h2 class="h2.responsive fw.bold text-center my-2"><i>Our courses</i></h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+  <img src="{% static 'images/computerscience.jpg' %}" class="card-img-top" alt="no image">
+  <div class="card-body">
+    <h5 class="card-title">Computer Science and Engineering</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+  <img src="{% static 'images/mechanical.jpg' %}" class="card-img-top" alt="no image">
+  <div class="card-body">
+    <h5 class="card-title">Mechanical Engineering</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            </div>
+        </div>
+          <br>
+   <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+  <img src="{% static 'images/electronic.png' %}" class="card-img-top" alt="no image">
+  <div class="card-body">
+    <h5 class="card-title">Electronics and Communication Engineering</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            </div>
+
+        </div>
+     <br>
+     <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+  <img src="{% static 'images/EEE.jpg' %}" class="card-img-top" alt="no image">
+  <div class="card-body">
+    <h5 class="card-title">Electrical and Electronics Engineering</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            </div>
+      </main>
+        <br>
+   <br>
+      <br>
+
+       <div class="container-fluid pb-0 mb-0 justify-content-center bg-dark text-white ">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class="text-muted mb-md-0 mb-5 bold-text">Pepper.</h3></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text "><b>VINS CHRISTIAN COLLEGE OF ENGINEERING</b></h6><ul class="list-unstyled"><li>Home</li><li>Courses</li><li>Faculty</li><li>Contact us</li></ul></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6><p class="mb-1">605, RATAN ICON BUILDING</p><p>SEAWOODS SECTOR,New York</p> </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto  my-md-0 mt-5 order-sm-1 order-3 align-self-end"><p class="social text-muted mb-0 pb-0 bold-text"> <span  class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Pepper All Rights Reserved.</small></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end "><h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3   "><h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
